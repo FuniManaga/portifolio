@@ -1,4 +1,4 @@
-import React from 'react'
+
 import ProjectItem from './ProjectItem'
 import cryptoImg from '../assets/crypto.jfif'
 import netflixImg from '../assets/netflix.jfif'
@@ -17,10 +17,10 @@ export default function Projects() {
                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
         <div className='grid sm:grid-cols-2 gap-12'>
-            <ProjectItem img={cryptoImg} title="Cryptocurrency Tracker" description="A web app that allows users to track the" />
-            <ProjectItem img={netflixImg} title="netflix App" description="A web app that allows users to track the" />
-            <ProjectItem img={propertyImg} title="Property app" desc="A web application that allows users to track the prices of" />
-            <ProjectItem img={twitchImg} title="twitch app" description="A web app that allows users to track the" />
+            <ProjectItem img={cryptoImg} title="Cryptocurrency Tracker"  />
+            <ProjectItem img={netflixImg} title="netflix App" />
+            <ProjectItem img={propertyImg} title="Property app"  />
+            <ProjectItem img={twitchImg} title="twitch app"  />
         </div>
     </div>
   )

@@ -24,3 +24,4 @@ const WorkItem: React.FC<WorkItemProps> = ({ year, title, duration, details }) =
 };
 
 export default WorkItem;
+

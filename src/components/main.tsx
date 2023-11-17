@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { BsFacebook, BsInstagram, BsLinkedin, BsTwitterX } from 'react-icons/bs';
 import {TypeAnimation} from 'react-type-animation'
 

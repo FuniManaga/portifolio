@@ -1,47 +1,56 @@
-import React from 'react'
-import WorkItem from './WorkItem'
+import React from 'react';
+import WorkItem from './WorkItem';
 
-const data = [
+interface WorkData {
+  years: number;
+  title: string;
+  duration: string;
+  details: string;
+}
+
+const data: WorkData[] = [
   {
-    year: 2020,
+    years: 2020,
     duration: '3 years',
-    title: 'Content Creater',
-    details: 'Best in the bussines, started with django and python and then migrated to react and react native as well as javascript Best in the bussines, started with django and python and then migrated to react and react native as well as javascript'
+    title: 'Content Creator',
+    details: 'Best in the business, started with Django and Python and then migrated to React and React Native as well as JavaScript. Best in the business, started with Django and Python and then migrated to React and React Native as well as JavaScript.',
   },
   {
-    year: 2021,
-    title: 'google',
-    duration: '1 years',
-    details: 'Best in the bussines, started with django and python and then migrated to react and react native as well as javascriptBest in the bussines, started with django and python and then migrated to react and react native as well as javascript '
+    years: 2021,
+    title: 'Google',
+    duration: '1 year',
+    details: 'Best in the business, started with Django and Python and then migrated to React and React Native as well as JavaScript. Best in the business, started with Django and Python and then migrated to React and React Native as well as JavaScript.',
   },
   {
-    year: 2022,
-    title: 'google',
+    years: 2022,
+    title: 'Google',
     duration: '2 years',
-    details: 'Best in the bussines, started with django and python and then migrated to react and react native as well as javascript Best in the bussines, started with django and python and then migrated to react and react native as well as javascript'
+    details: 'Best in the business, started with Django and Python and then migrated to React and React Native as well as JavaScript. Best in the business, started with Django and Python and then migrated to React and React Native as well as JavaScript.',
   },
   {
-    year: 2019,
-    title: 'google',
+    years: 2019,
+    title: 'Google',
     duration: '3 years',
-    details: 'Best in the bussines, started with django and python and then migrated to react and react native as well as javascript Best in the bussines, started with django and python and then migrated to react and react native as well as javascript'
+    details: 'Best in the business, started with Django and Python and then migrated to React and React Native as well as JavaScript. Best in the business, started with Django and Python and then migrated to React and React Native as well as JavaScript.',
   },
-]
+];
 
-const Work = () => {
-  return(
+const Work: React.FC = () => {
+  return (
     <div id='work' className='max-w-[1040px] m-auto md:first-letter:pl-20 p-4 py-16'>
       <h1 className='text-4xl font-bold text-center text-[#001b5e]'>Work</h1>
-      {data.map((item, idx) =>(
-        <WorkItem 
-          key={idx} 
-          year={item.year} 
-          title={item.title} 
-          duration={item.duration} 
-          details={item.details} />
+      {data.map((item, idx) => (
+        <WorkItem
+          key={idx}
+          year={item.years.toString()}
+          title={item.title}
+          duration={item.duration}
+          details={item.details}
+        />
       ))}
     </div>
-  )
+  );
 };
 
 export default Work;
+
