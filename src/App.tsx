@@ -3,7 +3,6 @@ import Footer from './components/Footer';
 import Projects from './components/about';
 import Sidenav from './components/Sidenav'
 import Work from './components/project';
-import styles from './style';
 import Main from './components/main';
 
 function App() {
