@@ -9,12 +9,7 @@ import Main from './components/main';
 function App() {
   return (
     <div >
-      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-          <div className={`${styles.boxWidth}`}>
-            <Sidenav />
-          </div>
-        </div>
-
+      <Sidenav />
       <Main />
       <Work />
       <Projects />
