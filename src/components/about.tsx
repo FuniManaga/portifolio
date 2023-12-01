@@ -1,7 +1,5 @@
 
 import ProjectItem from './ProjectItem'
-import cryptoImg from '../assets/crypto.jfif'
-import netflixImg from '../assets/netflix.jfif'
 import propertyImg from '../assets/property.jfif'
 import twitchImg from '../assets/twitch.jfif'
 
@@ -17,8 +15,8 @@ at <span className='text-[#001b5e]'>SFFP</span>, our mission is to provide quali
  ultimately empowering them to reach their full potential.
         </p>
         <div className='grid sm:grid-cols-2 gap-12'>
-            <ProjectItem img={cryptoImg} title="Ralson Tshinanne"  />
-            <ProjectItem img={netflixImg} title="Mphaphuli" />
+            <ProjectItem img='https://th.bing.com/th/id/OIP.F0tFEhJ09HS7GToSSA8LDgHaE7?rs=1&pid=ImgDetMain' title="Ralson Tshinanne"  />
+            <ProjectItem img='https://th.bing.com/th/id/OIP.UO5I7H2eQZ0pSq5RDxA6wAHaHa?rs=1&pid=ImgDetMain' title="Mphaphuli" />
             <ProjectItem img={propertyImg} title="Phaswana"  />
             <ProjectItem img={twitchImg} title="Raluswielo"  />
         </div>
